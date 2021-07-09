@@ -12,3 +12,44 @@
 - `Next.js`
 
 ---
+
+### API
+
+##### 1. [Github users api](https://api.github.com/users)
+
+```json
+{
+  "login": "always-manzi",
+  "id": 28479028,
+  "node_id": "MDQ6VXNlcjI4NDc5MDI4",
+  "avatar_url": "https://avatars.githubusercontent.com/u/28479028?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/always-manzi",
+  "html_url": "https://github.com/always-manzi",
+  "followers_url": "https://api.github.com/users/always-manzi/followers",
+  "following_url": "https://api.github.com/users/always-manzi/following{/other_user}",
+  "gists_url": "https://api.github.com/users/always-manzi/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/always-manzi/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/always-manzi/subscriptions",
+  "organizations_url": "https://api.github.com/users/always-manzi/orgs",
+  "repos_url": "https://api.github.com/users/always-manzi/repos",
+  "events_url": "https://api.github.com/users/always-manzi/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/always-manzi/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "manzi",
+  "company": "wouldyou.in",
+  "blog": "",
+  "location": "鷄龍 , KOREA",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 3,
+  "public_gists": 0,
+  "followers": 4,
+  "following": 5,
+  "created_at": "2017-05-06T08:49:00Z",
+  "updated_at": "2021-07-09T13:42:20Z"
+}
+```
