@@ -1,5 +1,5 @@
 import css from "styled-jsx/css"
-import { GoMail } from "react-icons/go";
+import { CgPin , CgCopyright , CgGlobeAlt , CgOrganisation , CgGitBranch} from "react-icons/cg";
 import fetch from "isomorphic-unfetch";
 
 const style = css `
@@ -66,8 +66,24 @@ const Profile = ({ user }) => {
                 <p className = "profile-user-login">{user.login}</p>
                 <p className = "profile-user-bio">{user.bio}</p>
                 <p className = "profile-user-info">
-                    <GoMail size={16} color="#6a737d" />
-                    <span className="profile-user-info-text">{user.email}</span>
+                    <CgOrganisation size={16} color="#303030" />
+                    <span className="profile-user-info-text">{user.company}</span>
+                </p>
+                <p className = "profile-user-info">
+                    <CgPin size={16} color="#303030" />
+                    <span className="profile-user-info-text">{user.location}</span>
+                </p>
+                <p className = "profile-user-info">
+                    <CgGitBranch size={16} color="#303030" />
+                    <span className="profile-user-info-text">{user.created_at}</span>
+                </p>
+                <p className = "profile-user-info">
+                    <CgGlobeAlt size={16} color="#303030" />
+                    <span className="profile-user-info-text">{user.blog}</span>
+                </p>
+                <p className = "profile-user-info">
+                    <CgCopyright size={16} color="#303030" />
+                    <span className="profile-user-info-text">{user.name}</span>
                 </p>
             </div>
             <style jsx>{style}</style>
