@@ -11,7 +11,7 @@ const style = css `
 
     .profile-image-wrapper {
         width: 100%;
-        border: 1px solid #e1e4e8; 
+        border: 1px solid #303030; 
     }
 
     .profile-image-wrapper .profile-image {
