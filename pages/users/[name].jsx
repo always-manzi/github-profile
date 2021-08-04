@@ -1,16 +1,17 @@
 import fetch from "isomorphic-unfetch";
 
-const index = ({ user }) => {
+const name = ({ user }) => {
   const username = user && user.name;
   return <div>{username}</div>;
 };
 
-export const getServerSideprops = async () => {
+export const getServerSideprops = async ({ query }) => {
+    const { name } = query;
   try {
-    const res = await fetch("https://api.github.com/users/always-manzi");
+    const res = await fetch(`https://api.github.com/users/${name}`);
     if (res.status === 200) {
       const user = await res.json();
-      return { props: {} };
+      return { props: { user } };
     }
     return { props: {} };
   } catch (e) {
@@ -19,4 +20,4 @@ export const getServerSideprops = async () => {
   }
 };
 
-export default index;
+export default name;
